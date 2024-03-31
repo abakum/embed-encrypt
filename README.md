@@ -20,6 +20,8 @@ go1.19 get github.com/abakum/embed-encrypt
 
 ## Usage
 
+Please look [example](https://github.com/abakum/eex)
+
 Replace your `//go:embed file.txt` directive  with `//encrypted:embed file.txt`,
 the syntax is the same as the embed directives read the embed docs [here](https://pkg.go.dev/embed?utm_source=gopls#hdr-Directives). 
 Replace your `embed.FS` type  with `encryptedfs.FS`.
