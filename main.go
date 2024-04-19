@@ -250,9 +250,6 @@ func directives2Files(directives []directive) error {
 					continue
 				}
 			}
-			if os.IsNotExist(err) {
-				return fmt.Errorf("pattern %s: no matching files found", p)
-			}
 			matches, err := filepath.Glob(p)
 			if err != nil {
 				return err
